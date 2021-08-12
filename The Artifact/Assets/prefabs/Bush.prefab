@@ -10,9 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3357226632259227071}
   - component: {fileID: 5504410040958113929}
-  m_Layer: 0
+  - component: {fileID: 1057041604}
+  - component: {fileID: 4146518532306668806}
+  - component: {fileID: 3153230188935248614}
+  m_Layer: 6
   m_Name: Bush
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,6 +89,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1057041604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704831051829121547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75029d72b8874ae4498f54b2e02251a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bushSprites:
+  - {fileID: 21300000, guid: bccf5691ef79a944598ec9ad5f0c60e1, type: 3}
+  - {fileID: 21300000, guid: 8493037421bf9784e8a0b8d1e1ea2110, type: 3}
+  - {fileID: 21300000, guid: 5b3c5db921a055a44bcc0283a718b0f7, type: 3}
+  fruitSprites:
+  - {fileID: 21300000, guid: e8e4135bfdb53d74d8630bf50c2fcef5, type: 3}
+  - {fileID: 21300000, guid: 695bd11414e079c4181fa4c4d4b81fb3, type: 3}
+  - {fileID: 21300000, guid: 1bbea70228f6be0418ccb2226d58c319, type: 3}
+  drySprites:
+  - {fileID: 21300000, guid: 81db0a11d015cc042b383a534851b250, type: 3}
+  - {fileID: 21300000, guid: b5a7ea66a63050e47bbcba1c84994f53, type: 3}
+  - {fileID: 21300000, guid: 72c2a1845d96c6f4e9ea8cf4d6c07fc5, type: 3}
+  fruitRenderer:
+  - {fileID: 477373773899813836}
+  - {fileID: 3952730464662135570}
+  bushVarient: 2
+  hideTimePerFruit: 0.3
+--- !u!114 &4146518532306668806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704831051829121547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 333e882862545c2439abcbada53e6fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountPerType: 0a000000070000000c000000
+  respawnTime:
+  - 1
+  - 1
+  - 1
+--- !u!61 &3153230188935248614
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704831051829121547}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000011920929, y: -0.014707804}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5881808, y: 0.5587653}
+  m_EdgeRadius: 0
 --- !u!1 &4455143550520144075
 GameObject:
   m_ObjectHideFlags: 0

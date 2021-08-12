@@ -15,10 +15,9 @@ public class BushVisuals : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         bushVarient = (BushVarient)Random.Range(0, bushSprites.Length);
-        Debug.Log(bushVarient);
         sr.sprite = bushSprites[(int)bushVarient];
 
-        for (int i = 0; i < fruitSprites.Length; i++)
+        for (int i = 0; i < fruitRenderer.Length; i++)
         {
             fruitRenderer[i].sprite = fruitSprites[(int)bushVarient];
             fruitRenderer[i].enabled = false;
