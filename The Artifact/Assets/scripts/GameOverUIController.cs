@@ -19,6 +19,13 @@ public class GameOverUIController : MonoBehaviour
             instance = this;
         }
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
     public void GameOver(string gameOverInfo)
     {
         gameOverText.text = gameOverInfo;
