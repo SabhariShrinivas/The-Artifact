@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        artifact = GameObject.FindWithTag("Artifact");
         rb = GetComponent<Rigidbody2D>();
         sR = GetComponent<SpriteRenderer>();
     }
@@ -25,6 +26,11 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (!artifact)
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
         if (isHarvesting)
         {
             rb.velocity = Vector2.zero;

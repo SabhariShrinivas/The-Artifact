@@ -37,6 +37,7 @@ public class Artifact : MonoBehaviour
         if(health <= 0)
         {
             health = 0;
+            GameOverUIController.instance.GameOver("Save the damn artifact CJ");
             Destroy(gameObject);
         }
     }

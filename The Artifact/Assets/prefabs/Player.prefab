@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 27025763698574067}
   - component: {fileID: 1422506526170882901}
   - component: {fileID: 1205258638}
+  - component: {fileID: 5402664941371311696}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -196,6 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxNumberOfFruits: 50
   currentNumberOfFruits: 0
+  backpackInfo: {fileID: 0}
 --- !u!82 &1205258638
 AudioSource:
   m_ObjectHideFlags: 0
@@ -292,3 +294,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5402664941371311696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4140354596973013627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5c75a1680606b4ba9f8ab0c000084d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slashPrefab: {fileID: 5236484893789361464, guid: 447c6997653821a41900c3280e6111f6, type: 3}
+  attackCooldown: 0.5

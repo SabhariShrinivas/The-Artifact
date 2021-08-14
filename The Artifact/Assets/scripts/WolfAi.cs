@@ -140,6 +140,10 @@ public class WolfAi : MonoBehaviour
             {
                 break;
             }
+            else
+            {
+                isMoving = false;
+            }
         }
     }
     void Attack()
